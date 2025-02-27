@@ -1,0 +1,550 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Raciel D Lago | AI Engineer</title>
+	<link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+	<script src="scripts/email.min.js"></script>
+    
+    <script src="scripts/jquery-1.11.1.js"></script>
+    
+	<script>
+	
+		$(document).ready(function() {
+            $("body").hide().fadeIn(2500);
+        });
+	
+    </script>
+</head>
+<body>
+
+<!-- Header Section ----------------------------------------------------------------------------------------------------------------------------->
+	<header>
+		<div class="container">
+			<div class="logo">
+				<img src="img/logo.png" alt="Raciel David Lago Logo">
+			</div>
+            <div id="Raciel"><h1>Raciel D Lago</h1></div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<!-- <li><a href="#publications">Publications</a></li> -->
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+<!---- Hero Section ------------------------------------------------------------------------------------------------------------------------------>
+	<section class="hero">
+		<div class="container" data-aos="fade-up" data-aos-delay="100">
+			<h1 class="welcome-text">Welcome</h1>
+			<p class="hero-description">Hi there! I am <strong>Raciel D. Lago</strong>, an Electrical Engineer and Developer specializing in Artificial Intelligence, IoT, Embedded Systems, and Automation. I design cutting-edge solutions for businesses, startups, researchers, and individual projects, integrating advanced technology to tackle challenges in energy, agriculture, healthcare, manufacturing, smart cities, and software development.</p>
+            
+            <div><p><strong>"Shaping the Future with Smart Solutions"</strong></p></div>
+			
+            <a href="#projects" class="btn">Explore My Work</a>
+			<a href="files/Raciel_D_Lago_Resume.pdf" class="btn" download>Download My Resume</a>
+                        
+ 			<!-- Redes Sociales y Contacto en Hero Section -->
+			<div class="hero-contact">
+            
+            	<!-- Email con boton para copiar -->
+				<div class="hero-email">
+					<p>Email: <span id="hero-email-text">racielago@gmail.com</span></p>
+					<button id="hero-copy-email">Copy</button>
+				</div>
+                
+				<!-- Redes Sociales -->
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/raciel-lago" target="_blank"><img src="img/icons/linkedin.svg" alt="LinkedIn"></a>
+					<a href="https://github.com/racielago" target="_blank"><img src="img/icons/github-sign.png" alt="GitHub"></a>
+					<a href="https://www.researchgate.net/profile/Raciel-Lago-2" target="_blank"><img src="img/icons/researchgate (1).svg" alt="ResearchGate"></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!-- About Section ------------------------------------------------------------------------------------------------------------------------------->
+	<section id="about" class="about">
+		<div class="container" data-aos="fade-up" data-aos-delay="200">
+			<h2>About Me</h2>
+			<div class="about-content">
+				<div class="about-text">
+					<p>I am an Electrical and Artificial Intelligence Engineer with expertise in Embedded Systems, IoT, and Home Automation development. My work focuses on applying artificial intelligence to Electrical Engineering and Sustainable Development, designing intelligent solutions that optimize energy systems, enhance automation, and drive innovation in fields such as smart grids, home automation, agriculture, healthcare, and environmental monitoring.</p>
+					<p> Passionate about technology, innovation, and teaching, I strive to bridge the gap between research and real-world applications. With experience in both academia and industry, I founded a scientific research group dedicated to advancing AI applications in electrical engineering and sustainability. As a professor of Electrical Engineering at the University of Oriente and a dedicated developer, I thrive at the intersection of theory and practical implementation, transforming cutting-edge research into high-impact solutions.</p>
+					<p>In my journey, I’ve come to realize that true progress isn’t just about understanding the present, but about envisioning and actively shaping the future. It’s this belief that drives me to develop solutions that not only meet today’s challenges but also anticipate the needs of tomorrow. Through intelligent, AI-driven designs, I focus on creating smarter, more efficient systems that push the boundaries of what's possible. This is what motivates me—transforming innovative ideas into real-world impact. Whether you're an organization seeking AI solutions, a company looking for a skilled developer, or a collaborator eager to explore groundbreaking projects, I’m always open to opportunities that align with my mission of <strong>shaping the future with smart solutions.</strong></p>
+					<p>Let’s build the future together. <a href="#contact">Get in touch, and let's create something extraordinary.</a></p>
+				</div>                
+			</div>
+		</div>
+	</section>    
+
+<!--Project Section----------------------------------------------------------------------------------------------------------------------------->
+	<section id="projects" class="projects">
+		<div class="container" data-aos="fade-up" data-aos-delay="400">
+			<h2>Featured Projects</h2>
+			<p>Explore some of my most impactful projects, showcasing innovation and problem-solving.</p>
+			<div class="proyectos-grid">
+				<!-- Proyecto 1 -->
+            	<div class="proyecto-item" onclick="openModal(1)" data-aos="fade-up" data-aos-delay="500">
+                	<img src="img/projects/Banana Plantation Monitoring _2.jpg" alt="Banana Plantation Monitoring">
+                	<h3 class="proyecto-titulo">Banana Plantation Monitoring</h3>
+                	<div class="proyecto-overlay">
+						<h3>Banana Plantation Monitoring</h3>
+                    	<p>Development of an IoT system based on nRF52 for monitoring and tracking banana plantations, utilizing BLE communication and mesh networks for real-time data collection.</p>
+                    	<button class="ver-mas">See more</button>
+					</div>
+            	</div>
+
+            	<!-- Proyecto 2 -->
+            	<div class="proyecto-item" onclick="openModal(2)" data-aos="fade-up" data-aos-delay="500">
+                	<img src="img/projects/water_saver_1.png" alt="Water Saving System">
+                	<h3 class="proyecto-titulo">Water Saving System</h3>
+                	<div class="proyecto-overlay">
+						<h3>Water Saving System</h3>
+                    	<p>Development of an intelligent IoT system to reduce water flow in electric showers and agricultural irrigation systems, optimizing consumption through adaptive control and utilizing hydroelectric energy.</p>
+                    	<button class="ver-mas">See more</button>
+               		</div>
+            	</div>
+                
+                <!-- Proyecto 3 -->
+            	<div class="proyecto-item" onclick="openModal(3)" data-aos="fade-up" data-aos-delay="500">
+                	<img src="img/projects/Solar Dryer1.jpg" alt="Automated Solar Dryer">
+                	<h3 class="proyecto-titulo">Automated Solar Dryer</h3>
+                	<div class="proyecto-overlay">
+                    	<h3 style="margin-bottom:0.2rem;">Automated Solar Dryer</h3>
+                    	<p>Development of an automated system based on Arduino to control and optimize the solar drying process of agricultural products, maintaining temperature and humidity parameters according to the desired conditions.</p>
+                    	<button class="ver-mas">See more</button>
+					</div>
+            	</div>
+
+            	<!-- Proyecto 4 -->
+            	<div class="proyecto-item" onclick="openModal(4)" data-aos="fade-up" data-aos-delay="600">
+                	<img src="img/projects/Prediction Demand1.png" alt="Prediction of Electricity Demand">
+                	<h3 class="proyecto-titulo">Prediction of Electricity Demand</h3>
+                	<div class="proyecto-overlay">
+                    	<h3>Prediction of Electricity Demand</h3>
+                    	<p>Development of an LSTM-based model to predict electricity demand in Santiago de Cuba</p>
+                    	<button class="ver-mas">See more</button>
+               		</div>
+            	</div>
+                
+                <!-- Proyecto 5 -->
+            	<div class="proyecto-item" onclick="openModal(5)" data-aos="fade-up" data-aos-delay="600">
+                	<img src="img/projects/Solar Energy3.jpg" alt="Prediction Solar Energy">
+                	<h3 class="proyecto-titulo">Prediction of Solar Energy</h3>
+                	<div class="proyecto-overlay">
+                    	<h3>Prediction for Solar Energy</h3>
+                    	<p>Development of a hybrid model based on LSTM and XGBoost to predict the energy generation of a photovoltaic park in Santiago de Cuba, optimizing its integration into the electrical grid.</p>
+                    	<button class="ver-mas">See more</button>
+					</div>
+            	</div>
+
+            	<!-- Proyecto 6 -->
+            	<div class="proyecto-item" onclick="openModal(6)" data-aos="fade-up" data-aos-delay="600">
+                	<img src="img/projects/Wave Energy1.png" alt="Simulation of Wave Energy">
+                	<h3 class="proyecto-titulo">Simulation of Wave Energy</h3>
+                	<div class="proyecto-overlay">
+                    	<h3 style="margin-bottom:0.2rem;">Simulation of Wave Energy</h3>
+                    	<p style="margin-bottom:0.2rem;">Niord is a program developed in MATLAB to model and simulate the behavior of wave energy generation systems under various oceanic conditions, allowing the evaluation of their feasibility in different locations.</p>
+                    	<button class="ver-mas">See more</button>
+               		</div>
+            	</div>
+                
+        	</div>
+            
+		</div>
+	</section>
+
+	<!-- Modal de Proyecto -->
+	<div id="modal-proyecto" class="modal">
+    	<div class="modal-content">
+        	<span class="close" onclick="closeModal()">&times;</span>
+        	<h2 id="modal-title"></h2>
+
+        <!-- Carrusel de imágenes -->
+        <div class="modal-slider">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-container">
+                <img id="slide-1" class="slide">
+                <img id="slide-2" class="slide">
+                <img id="slide-3" class="slide">
+                <img id="slide-4" class="slide">
+                <img id="slide-5" class="slide">
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <p><strong>📌 Short Description:</strong></p>
+        <p id="modal-description"></p>
+
+        <p><strong>📅 Development Date:</strong> <span id="modal-date"></span></p>
+        <p><strong>🛠 Technologies Used:</strong> <span id="modal-technologies"></span></p>
+
+        <p><strong>🎯 Project Objective:</strong></p>
+        <p id="modal-objective"></p>
+        
+        <p><strong>👨‍💻 Role:</strong></p>
+        <p id="modal-role"></p>
+
+        <p><strong>🔍 Process and Approach:</strong></p>
+        <ul id="modal-process"></ul>
+
+        <p><strong>⚡ Challenges and Solutions:</strong></p>
+        <p id="modal-challenges"></p>
+
+        <p><strong>🏆 Results and Achievements:</strong></p>
+        <ul id="modal-results"></ul>
+
+        <p><strong>📂 Project Category:</strong> <span id="modal-category"></span></p>
+        
+        <!-- Enlace a GitHub -->
+        <a id="modal-link" href="#" target="_blank">🔗 View on GitHub</a>
+
+        <!-- Enlace a Artículo Científico -->
+        <a id="modal-article" href="#" target="_blank">🔗 Read the Article</a>
+
+        <!-- Nota Confidencial -->
+        <p id="modal-confidential" style="display:none; color: red; font-style: italic;"></p>
+    </div>
+</div>
+
+<!-- Skills Section ------------------------------------------------------------------------------------------------------------------------------>
+	<section id="skills" class="skills">
+		<div class="container" data-aos="fade-up" data-aos-delay="700">
+			<h2>Core Skills</h2>
+			<div class="skills-grid">
+            	
+                <!-- Programing-->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+					<img src="img/icons/programming.png" alt="Programming" class="skill-icon">
+					<h3 class="skill-title">Programming Languajes</h3>
+					<p>Python, C/C++, MATLAB, R, Java, Rust, Assembly, Scala.</p>
+				</div>
+                
+                <!-- AI-->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+					<img src="img/icons/robot.png" alt="Artificial Intelligence" class="skill-icon">
+					<h3 class="skill-title">Artificial Intelligence</h3>
+					<p>TensorFlow, PyTorch, Scikit-learn, OpenCV, NLP, Machine Learning, Deep Learning</p>
+				</div>
+                
+                <!-- Embedded Systems-->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+					<img src="img/icons/cpu.png" alt="Embedded Systems & IoT" class="skill-icon">
+					<h3 class="skill-title">Embedded Systems & IoT</h3>
+					<p>Arduino, nRF52, ESP32, STM32, Raspberry Pi,  ARM Cortex, PIC, Atmel AVR, BLE, RTOS</p>
+				</div>
+                
+                <!-- Electrical Engineering -->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+					<img src="img/icons/electrical-engineering.png" alt="Electrical Engineering" class="skill-icon">
+					<h3 class="skill-title">Electrical Engineering</h3>
+					<p>Circuit Design, Power Electronics & Energy Systems, Renewable Energy System, Control Systems & Automation, PLC Programming</p>
+				</div>
+                
+                 <!-- Cloud & DevOps -->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="900">
+					<img src="img/icons/devops.png" alt="Cloud & DevOps" class="skill-icon">
+					<h3 class="skill-title">Cloud & DevOps</h3>
+					<p>Docker, Jenkins, Kubernetes, Azure DevOps, MLflow, AWS SageMaker, Git</p>
+				</div>
+                
+                <!-- Database & Data Visualization -->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="900">
+					<img src="img/icons/database (1).png" alt="Database & Data Visualization" class="skill-icon">
+					<h3 class="skill-title">Database & Data Visualization</h3>
+					<p>SQL/NoSQL Databases,Tableau, PowerBI</p>
+				</div>
+                
+                <!-- Testing -->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+					<img src="img/icons/testing.png" alt="Testing" class="skill-icon">
+					<h3 class="skill-title">Testing</h3>
+					<p>Pytest, Unit Testing, A/B Testing, Cross-Validation, Performance and Bias Testing.</p>
+				</div>
+                
+                <!-- Edge Computing -->
+				<div class="skill-item" data-aos="fade-up" data-aos-delay="800">
+					<img src="img/icons/edge-computing.png" alt="Edge Computing" class="skill-icon">
+					<h3 class="skill-title">Edge Computing</h3>
+					<p>Edge AI deployments, Edge frameworks (AWS Greengrass, Azure IoT Edge), Real-time data processing, Edge analytics for local processing.</p>
+				</div>
+                
+			</div>
+		</div>
+	</section>
+    
+<!-- Professional Highlights: -------------------------------------------------------------------------------------------------------------------->
+	<section id="testimonials" class="testimonials">
+		<div class="container" data-aos="fade-up" data-aos-delay="300">
+			<h2>Professional Highlights</h2>
+			<div class="carousel">
+				<div class="carousel-slide">
+                	
+                    <!-- Grupo Cientifico-->
+					<div class="testimonial-item active">
+						<img src="img/highlights/group-ai.jpg" alt="Grupo Científico de AI">
+						<h3>AI Research Group for Sustainable Development</h3>
+						<p>I founded a multidisciplinary team of electrical engineers, AI experts, and students from various engineering fields, collaborating with professionals from renewable energy companies. Our focus is on applying artificial intelligence to address key challenges in energy, agriculture, health, and environmental monitoring. Using AI algorithms in Python, Digital Twins in Matlab, Microcontrolers and C/C++, we analyze sensor data to drive sustainable solutions.</p>
+					</div>
+                    
+                    <!-- Featured Projects-->
+					<div class="testimonial-item">
+						<img src="img/highlights/project.jpg" alt="Proyecto Personal">
+						<h3>Featured Projects</h3>
+						<p>I have developed AI-based environmental monitoring platforms, contributing to real-time data analysis for sustainability. One of my key projects involved automating a solar dryer using Arduino, in collaboration with a company (details are confidential due to company agreements). Additionally, I developed a genetic algorithm for optimizing and adapting the design of a wave energy system to the specific conditions of Cuban coastlines. Currently, I am working on several AI projects applied to electrical engineering, exploring innovative solutions for sustainable development.</p>
+					</div>
+                    
+                     <!-- Professional Achievements-->
+					<!-- <div class="testimonial-item">
+						<img src="img/highlights/achievement.jpg" alt="Logros">
+						<h3>Professional Achievements</h3>
+						<p>Recognized for contributions in applied AI for sustainability, including key advancements in energy efficiency and environmental monitoring through innovative AI solutions. I have also received accolades for my work in fostering collaboration between academia and industry in the renewable energy sector.</p>
+					</div> -->
+                    
+                    <!-- Publicaciones Cientificas -->
+					<div class="testimonial-item">
+						<img src="img/highlights/research-publication.png" alt="Publicaciones de ResearchGate">
+						<h3>Publications</h3>
+						<p>Explore my scientific publications on <a href="https://www.researchgate.net/profile/Raciel-Lago-2" target="_blank">ResearchGate</a>. I am always open to collaborating on research projects, scientific articles, and innovative solutions in AI and sustainable development. Feel free to reach out if you're interested in working together.</p>
+					</div>
+                    
+                    <!-- Eventos y Conferencias -->
+					<!-- <div class="testimonial-item">
+						<img src="img/highlights/event.jpg" alt="Eventos">
+						<h3>Events & Conferences</h3>
+						<p>I have participated in international AI and technology conferences, as well as sustainability and sustainable development events. Additionally, I have contributed to scientific events at the university level, sharing insights on AI's role in driving sustainable innovation.</p>
+					</div> -->
+                    
+                     <!-- Certificaciones-->
+					<div class="testimonial-item">
+						<img src="img/highlights/certification.png" alt="Cursos y Certificaciones">
+						<h3>Courses & Certifications</h3>
+						<p>I hold certifications in AI, Python, nRF52, Bluetooth Low Energy (BLE), and various other fields. Additionally, I am currently working on further certifications in Machine Learning, Deep Learning, IoT, and other related areas to enhance my expertise.</p>
+					</div>
+                    
+                     <!-- Testimonios -->
+					<!-- <div class="testimonial-item">
+						<img src="img/highlights/testimonial.jpg" alt="Testimonio">
+						<h3>Testimonials</h3>
+						<p style="font-style: italic">"Raciel's work in applied AI has been exceptional and highly impactful, making significant contributions to the scientific community."</p>
+					</div> -->
+                    
+                    <!-- My Hobbies -->
+					<div class="testimonial-item">
+						<img src="img/highlights/hobbies.png" alt="My Hobbies">
+						<h3>My Hobbies</h3>
+						<p>One of my hobbies is video game development—a creative exploration that I’m passionate about. While I’ve worked with various game development tools, including Pygame, Unity, Unreal, and Godot, my projects are still in the early stages, and I look forward to expanding my skills in this area.</p>
+					</div>
+				</div>
+                
+                    <!-- Blog & YouTube -->
+                    <!--<div class="testimonial-item">
+						<img src="img/highlights/research-publication.jpg" alt="Publicaciones de ResearchGate">
+						<h3>Blog & YouTube</h3>
+						<p>Explore my blog and YouTube channel, where I share insights, tutorials, and discussions on the application of Artificial Intelligence for sustainable development. Through these platforms, I aim to promote knowledge-sharing and encourage collaboration on projects that leverage AI in energy, agriculture, health, and environmental monitoring. Feel free to connect with me, share your thoughts, and contribute to the ongoing dialogue on sustainable innovation.</p>
+					</div>-->
+                    
+				<button id="prev" class="carousel-control">❮</button>
+				<button id="next" class="carousel-control">❯</button>
+			</div>
+		</div>
+	</section>
+
+<!-- Service Section ------------------------------------------------------------------------------------------------------------------------->
+	<section id="services" class="servicios">
+		<div class="container" data-aos="fade-up" data-aos-delay="900">
+			<h2>How I Can Help</h2> <!-- "Professional Services", "Services I Offer", "What I Can Do for You", "My Services", "My Expertise"-->
+			<div class="servicios-grid">
+            
+				<!-- Service 1 Artificial Intelligence and Data Science Development -->
+				<div class="servicio-item" data-aos="fade-up" data-aos-delay="1000">
+					<div class="servicio-icono">
+						<img src="img/icons/technology.png" alt="AI & Data Science">
+					</div>
+					<h3>Artificial Intelligence and Data Science Development</h3>
+					<p>AI models, data analysis, and advanced visualization.</p>
+					<button class="ver-mas">See more</button>
+					<div class="servicio-detalle">
+						<ul>
+							<li>Development of Machine Learning and Deep Learning Models.</li>
+							<li>Signal and image processing.</li>
+							<li>Development of Natural Language Processing (NLP) and Computer Vision Algorithms</li>
+							<li>Development of recommendation systems and explainable AI.</li>
+							<li>Optimization of models in Python, Scikit-learn, TensorFlow, PyTorch, and MATLAB.</li>
+							<li>AI for embedded systems and IoT (Edge AI).</li>
+							<li>Data visualization and development of interactive dashboards for advanced analysis.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Service 2 Embedded Systems, IoT, and Home Automation Development-->
+				<div class="servicio-item" data-aos="fade-up" data-aos-delay="1000">
+					<div class="servicio-icono">
+						<img src="img/icons/smart-house.png" alt="IoT &  Home Automation">
+					</div>
+					<h3>Embedded Systems, IoT, and Home Automation Development</h3>
+					<p>Automation, monitoring, and optimization of hardware.</p>
+					<button class="ver-mas">See more</button>
+					<div class="servicio-detalle">
+						<ul>
+							<li>Design and programming in Arduino, Raspberry Pi, nRF5, ESP32, STM32.</li>
+							<li>IoT solutions with BLE, Wi-Fi, LoRa, and NB-IoT.</li>
+							<li>AI integration in electronic systems.</li>
+							<li>Development of home automation and industrial automation systems.</li>
+							<li>Development and optimization of firmware in C/C++, Python, and RTOS for embedded systems.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Service 3 Consulting and Technical Advisory-->
+				<div class="servicio-item" data-aos="fade-up" data-aos-delay="1100">
+					<div class="servicio-icono">
+						<img src="img/icons/operator.png" alt="Technical Consulting">
+					</div>
+					<h3>Consulting and Technical Advisory</h3>
+					<p>Optimization of AI, IoT, and embedded projects.</p>
+					<button class="ver-mas">See more</button>
+					<div class="servicio-detalle">
+						<ul>
+							<li>Consulting on AI applied to embedded systems.</li>
+							<li>Optimization and improvement of existing systems in AI, IoT, and automation.</li>
+							<li>Code auditing and optimization in Python, C/C++, and MATLAB.</li>
+							<li>Feasibility and cost evaluation for technology projects.</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Service 4 Maintenance, Support, and Training-->
+				<div class="servicio-item" data-aos="fade-up" data-aos-delay="1100">
+					<div class="servicio-icono">
+						<img src="img/icons/service.png" alt="Maintenance, Support, and Training">
+					</div>
+					<h3>Maintenance, Support, and Training</h3>
+					<p>Post-delivery support and technical training.</p>
+					<button class="ver-mas">See more</button>
+					<div class="servicio-detalle">
+						<ul>
+							<li>Support and maintenance of AI, IoT, and embedded systems.</li>
+							<li>Training in AI, Data Science, IoT, home automation, and programming in Python, MATLAB, and C/C++.</li>
+							<li>Detailed documentation with implementation guides.</li>
+						</ul>
+					</div>
+				</div>
+            
+				<!-- Service 5 Testing, Validation, and Optimization-->
+				<div class="servicio-item" data-aos="fade-up" data-aos-delay="1200">
+					<div class="servicio-icono">
+						<img src="img/icons/speed.png" alt="Testing, Validation, and Optimization">
+					</div>
+					<h3>Testing, Validation, and Optimization</h3>
+					<p>Evaluation and improvement of models and hardware.</p>
+					<button class="ver-mas">See more</button>
+					<div class="servicio-detalle">
+						<ul>
+							<li>Evaluation of AI models in real-world environments.</li>
+							<li>Performance testing and optimization of embedded and IoT systems.</li>
+							<li>Simulation and testing in electronic circuits.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+            
+		<!-- Why work with me? -->
+			<div class="porque-trabajar" data-aos="fade-up" data-aos-delay="1300">
+				<h2>💡 Why work with me?</h2>
+				<ul>
+					<li>✅ <strong>Multidisciplinary experience:</strong>  A combination of AI, electronics, and software for complete solutions.</li>
+                    <li>✅ <strong>Focus on sustainability:</strong> Technological applications aligned with sustainable development.</li>
+					<li>✅ <strong>Flexibility and adaptability:</strong> Development from scratch or improvement of existing systems, with agile or traditional methodologies.</li>
+					<li>✅ <strong>Commitment to quality:</strong> Clean, optimized, and well-documented code.</li>
+				</ul>
+				<p>📩 Contact me to discuss your project and find the best solution for you!</p>
+				<a href="#contact" class="btn-contacto">Let's talk.</a>
+			</div>
+		</div>
+	</section>
+    
+    
+<!-- Contact Section ----------------------------------------------------------------------------------------------------------------------------->
+	<section id="contact" class="contacto">
+    	<div class="container" data-aos="fade-up" data-aos-delay="1400">
+        	<h2>Let's Connect and Create Together!</h2>
+        	<p>I'm always open to new opportunities, collaborations, tech discussions, and open-source projects. If you want to share ideas, discuss artificial intelligence, or simply connect, I'd be happy to talk with you!</p>
+            
+            <!-- Frase Estelar -->
+		<div class="frase-estelar"><p><strong>"Shaping the Future with <span>Smart Solutions</span>"</strong></p></div>
+
+        	<!-- Email con botón para copiar -->
+        	<div class="email-container">
+            	<p>Email: <span id="email-text">racielago@gmail.com</span></p>
+            	<button id="copy-email">Copy</button>
+        	</div>
+
+        	<!-- Formulario de Contacto -->
+        	<form id="contact-form">
+            	<input type="text" id="name" name="name" placeholder="Your Name" required>
+            	<input type="email" id="email" name="email" placeholder="Your Email" required>
+            	<textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            	<button type="submit">Send Message</button>
+            	<p id="form-status"></p>
+        	</form>
+
+        	<!-- Botón para Agendar Reunión -->
+        	<a href="https://calendly.com/racielago" target="_blank" class="btn-meeting"> 📅 Schedule a Meeting</a>
+            <!--<button id="calendly-btn" class="btn-meeting">📅 Schedule a Meeting</button>-->
+                        
+            <!-- Contenedor del iframe (inicialmente oculto) -->
+			<!--<div id="calendly-container" style="display: none; margin-top: 20px;">
+    			<iframe id="calendly-iframe" src="https://calendly.com/racielago" width="100%" height="600px" frameborder="0"></iframe>
+			</div>-->
+        
+         	<!-- Redes Sociales -->
+ 			<div class="social-icons" style="justify-content: center;">
+        		<a href="https://www.linkedin.com/in/raciel-lago" target="_blank"><img src="img/icons/linkedin.svg" alt="LinkedIn"></a>
+        		<a href="https://github.com/racielago" target="_blank"><img src="img/icons/github-sign.png" alt="GitHub"></a>
+        		<a href="https://www.researchgate.net/profile/Raciel-Lago-2" target="_blank"><img src="img/icons/researchgate (1).svg" alt="ResearchGate"></a>
+    		</div>
+    	</div>
+        
+    	
+	</section>
+
+<!-- Acknowledgements Section -------------------------------------------------------------------------------------------------------------------->
+	<section id="acknowledgements" class="acknowledgements" data-aos="fade-up" data-aos-delay="1500">
+    	<div class="container">
+        	<h3>Acknowledgements</h3>
+        	<p>Icons used in this website are from Flaticon and credited to their respective authors:</p>
+        	<ul class="icon-credits">
+        		<li><a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by juicy_fish - Flaticon</a>   |   <a href="https://www.flaticon.com/free-icons/droid" title="droid icons">Droid icons created by juicy_fish - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/technology" title="technology icons">Technology icons created by Vitaly Gorbachev - Flaticon</a></li>
+            	<li><a href="https://www.flaticon.com/free-icons/electrical-engineering" title="electrical engineering icons">Electrical engineering icons created by gravisio - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/devops" title="devops icons">Devops icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/database" title="database icons">Database icons created by kerismaker - Flaticon</a></li>
+            	<li><a href="https://www.flaticon.com/free-icons/debugging" title="debugging icons">Debugging icons created by iconixar - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/edge-computing" title="edge computing icons">Edge computing icons created by Arkinasi - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/artificial-intelligence" title="artificial intelligence icons">Artificial intelligence icons created by FACH - Flaticon</a></li>
+            	<li><a href="https://www.flaticon.com/free-icons/contact-center" title="contact center icons">Contact center icons created by Freepik - Flaticon</a>| <a href="https://www.flaticon.com/free-icons/smart-house" title="smart house icons">Smart house icons created by Freepik - Flaticon</a> | <a href="https://www.flaticon.com/free-icons/it-support" title="it support icons">It support icons created by Dewi Sari - Flaticon</a></li>
+            	<li><a href="https://www.flaticon.com/free-icons/page-speed" title="page speed icons">Page speed icons created by kerismaker - Flaticon</a></li>
+       	 	</ul>
+    	</div>
+	</section>
+    
+<!-- Footer ------------------------------------------------------------------------------------------------------------------------------------>
+	<footer>
+		<div class="container">
+			<p>&copy; 2025 Raciel D Lago. All rights reserved.</p>
+        </div>
+    </footer>   
+
+	<!-- AOS Library -->
+	<script src="scripts/aos.js"></script>
+	<script>
+    	AOS.init();
+	</script>
+    
+</body>
+
+</html>
